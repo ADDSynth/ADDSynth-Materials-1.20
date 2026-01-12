@@ -1,0 +1,17 @@
+version 1.0 - TBD
+NEW:
+  Added 7 new Materials: Nickel, Lead, Zinc, Cobalt, Brass, Invar, and Neodymium.
+    Nickel, Lead, and Zinc are common (like Iron).
+    Cobalt is uncommon (like Silver and Gold).
+    Neodymium is rare (like Platinum or Titanium).
+    Brass and Invar are Metal Alloys.
+  Added missing Deepslate variants of all ores.
+CHANGED:
+  In the real world, Bronze actually has a lighter color than Copper. Changed the color of Bronze
+    blocks and items to a lighter color that I've used for Copper before.
+  Silicon Ore now drops 2-3 Silicon instead of just 1.
+
+
+
+For older version history, please see Overpowered Technology changelog before Version 6.
+
