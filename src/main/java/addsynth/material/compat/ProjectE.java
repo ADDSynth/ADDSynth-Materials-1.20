@@ -1,7 +1,7 @@
 package addsynth.material.compat;
 
 import addsynth.material.ADDSynthMaterials;
-import addsynth.material.Material;
+import addsynth.material.reference.Material;
 import net.minecraftforge.fml.InterModComms;
 import moze_intel.projecte.api.imc.CustomEMCRegistration;
 import moze_intel.projecte.api.imc.IMCMethods;

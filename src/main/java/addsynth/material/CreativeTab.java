@@ -1,6 +1,7 @@
 package addsynth.material;
 
 import addsynth.material.compat.MaterialsCompat;
+import addsynth.material.reference.Material;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;

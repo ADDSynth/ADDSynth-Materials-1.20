@@ -1,6 +1,5 @@
-package addsynth.material;
+package addsynth.material.reference;
 
-import addsynth.material.reference.Names;
 import addsynth.material.types.*;
 import addsynth.material.util.MaterialTag;
 import net.minecraft.world.item.Item;
@@ -99,52 +98,42 @@ public final class Material {
   public static final Gem SAPPHIRE    = new Gem("sapphire",    MapColor.WATER);
   // public static final Gem TANZANITE   = new Gem("tanzanite",   MapColor.COLOR_PURPLE);
   public static final Gem TOPAZ       = new Gem("topaz",       MapColor.COLOR_ORANGE);
-  public static final SimpleMaterial ROSE_QUARTZ = new SimpleMaterial("rose_quartz", MapColor.COLOR_PINK, 3, 7);
-  
-  // MapColor Quartz is slightly darker than Cloth or Snow
-  /* Brightness Scale:
-    1 SNOW   = new MapColor(8,  16777215);   (White)
-    2 CLOTH  = new MapColor(3,  13092807);
-    3 METAL  = new MapColor(6,  10987431);
-    4 SILVER = new MapColor(22, 10066329);
-    5 STONE  = new MapColor(11,  7368816);
-    6 GRAY   = new MapColor(21,  5000268);
-  */
+  public static final SimpleMaterial ROSE_QUARTZ = new SimpleMaterial(MaterialData.ROSE_QUARTZ);
   
   // Common Metals
-  public static final Metal ALUMINUM = new Metal("aluminum", MapColor.DIAMOND);
-  public static final Metal LEAD     = new Metal("lead",     MapColor.COLOR_GRAY);
-  public static final Metal NICKEL   = new Metal("nickel",   MapColor.SAND);
-  public static final Metal TIN      = new Metal("tin",      MapColor.WOOL);
-  public static final Metal ZINC     = new Metal("zinc",     MapColor.METAL);
+  public static final Metal ALUMINUM = new Metal(MaterialData.ALUMINUM);
+  public static final Metal LEAD     = new Metal(MaterialData.LEAD);
+  public static final Metal NICKEL   = new Metal(MaterialData.NICKEL);
+  public static final Metal TIN      = new Metal(MaterialData.TIN);
+  public static final Metal ZINC     = new Metal(MaterialData.ZINC);
 
   // Uncommon Metals
-  public static final Metal SILVER   = new Metal("silver",   MapColor.WOOL);
-  public static final Metal COBALT   = new Metal("cobalt",   MapColor.COLOR_LIGHT_BLUE);
+  public static final Metal SILVER   = new Metal(MaterialData.SILVER);
+  public static final Metal COBALT   = new Metal(MaterialData.COBALT);
 
   // Rare Metals
-  public static final Metal PLATINUM  = new Metal("platinum", MapColor.ICE);
-  public static final Metal TITANIUM  = new Metal("titanium", MapColor.SNOW);
-  public static final Metal NEODYMIUM = new Metal("neodymium", MapColor.TERRACOTTA_WHITE);
+  public static final Metal PLATINUM  = new Metal(MaterialData.PLATINUM);
+  public static final Metal TITANIUM  = new Metal(MaterialData.TITANIUM);
+  public static final Metal NEODYMIUM = new Metal(MaterialData.NEODYMIUM);
 
   // Metal Alloys
   /** Metal alloy of Copper and Zinc. Generally 2 parts Copper, 1 part Zinc.
    *  Used in applications where corrosion resistance and low friction is required, such as door hinges and gears. */
-  public static final MetalAlloy BRASS    = new MetalAlloy("brass",  MapColor.GOLD);
+  public static final MetalAlloy BRASS    = new MetalAlloy(MaterialData.BRASS);
 
   /** Metal alloy of Tin and Copper. Stronger and more durable than Copper alone. */
-  public static final MetalAlloy BRONZE   = new MetalAlloy("bronze", MapColor.RAW_IRON);
+  public static final MetalAlloy BRONZE   = new MetalAlloy(MaterialData.BRONZE);
 
   /** Metal alloy of Iron and Nickel. Known for its strong resistance to heat expansion.
    *  Has a simplified Nickel:Iron ratio of 3:5 or 1:2. */
-  public static final MetalAlloy INVAR    = new MetalAlloy("invar",  MapColor.SAND);
+  public static final MetalAlloy INVAR    = new MetalAlloy(MaterialData.INVAR);
 
   // Now that I have the MaterialsCompat.SteelModAbsent() function, I could prevent registering Steel if I wanted to.
   /** An advanced version of Iron. Metal alloy of Iron with a very small amount of Carbon. */
-  public static final MetalAlloy STEEL    = new MetalAlloy("steel",  MapColor.STONE);
+  public static final MetalAlloy STEEL    = new MetalAlloy(MaterialData.STEEL);
   
   // Other Materials
-  public static final SimpleMaterial SILICON   = new SimpleMaterial("silicon",   MapColor.COLOR_GRAY, 0, 0);
-  // public static final OreMaterial URANIUM   = new OreMaterial("uranium",   MapColor.COLOR_LIGHT_GREEN);
+  public static final SimpleMaterial SILICON   = new SimpleMaterial(MaterialData.SILICON);
+  // public static final OreMaterial URANIUM   = new OreMaterial(MaterialData.URANIUM);
 
 }

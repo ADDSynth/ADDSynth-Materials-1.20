@@ -4,6 +4,7 @@ import java.util.List;
 import addsynth.material.compat.MaterialsCompat;
 import addsynth.material.compat.recipe.BronzeModAbsentCondition;
 import addsynth.material.compat.recipe.SteelModAbsentCondition;
+import addsynth.material.reference.Material;
 import addsynth.material.reference.Names;
 import addsynth.material.types.Gem;
 import net.minecraft.core.Registry;

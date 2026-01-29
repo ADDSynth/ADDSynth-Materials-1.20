@@ -2,16 +2,20 @@ package addsynth.material;
 
 import java.util.stream.Stream;
 import addsynth.material.compat.MaterialsCompat;
+import addsynth.material.config.Config;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartedEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms.IMCMessage;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -37,6 +41,16 @@ public final class ADDSynthMaterials {
     bus.addListener(ADDSynthMaterials::process_imc_messages);
     MinecraftForge.EVENT_BUS.addListener(ADDSynthMaterials::onServerStarted);
     MinecraftForge.EVENT_BUS.addListener(MaterialsRegister::onMissingEntries);
+    // Game.registerConfig(context, Config::new, MOD_ID+".toml");
+    initConfig(context);
+  }
+
+  private static final void initConfig(final FMLJavaModLoadingContext context){
+    // Put this here instead of using addsynth.core.util.game.Game to elliminate dependency to ADDSynthCore.
+    // Though if ONE MORE THING needs ADDSynthCore, I may just go ahead and use it as a dependency. (such as printing mod info in main_setup below.)
+    final Pair<Config, ForgeConfigSpec> SPEC_PAIR = new ForgeConfigSpec.Builder().configure(Config::new);
+    final ForgeConfigSpec CONFIG_SPEC = SPEC_PAIR.getRight();
+    context.registerConfig(ModConfig.Type.COMMON, CONFIG_SPEC, MOD_ID+".toml");
   }
 
   private static final void main_setup(final FMLCommonSetupEvent event){
