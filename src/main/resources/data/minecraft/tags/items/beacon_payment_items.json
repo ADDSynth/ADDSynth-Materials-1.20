@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "addsynth_materials:tin_ingot",
+    "addsynth_materials:aluminum_ingot",
+    "addsynth_materials:silver_ingot",
+    "addsynth_materials:titanium_ingot",
+    "addsynth_materials:platinum_ingot",
+    "addsynth_materials:lead_ingot",
+    "addsynth_materials:zinc_ingot",
+    "addsynth_materials:nickel_ingot",
+    "addsynth_materials:cobalt_ingot",
+    "addsynth_materials:neodymium_ingot",
+    "addsynth_materials:steel_ingot",
+    "addsynth_materials:bronze_ingot",
+    "addsynth_materials:brass_ingot",
+    "addsynth_materials:invar_ingot",
+    "addsynth_materials:ruby",
+    "addsynth_materials:topaz",
+    "addsynth_materials:citrine",
+    "addsynth_materials:sapphire"
+  ]
+}

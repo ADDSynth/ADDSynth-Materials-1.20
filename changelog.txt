@@ -7,6 +7,8 @@ NEW:
     Brass and Invar are Metal Alloys.
   Material info and descriptions are now printed in Ingot tooltips.
    - This can be configured in the addsynth_materials.toml config file.
+  Metal Blocks and Gem Blocks can now be used as Beacon Base blocks.
+  Metal Ingots and Gems can now be used as Beacon fuel.
 CHANGED:
   In the real world, Bronze actually has a lighter color than Copper. Changed the color of Bronze
     blocks and items to a lighter color that I've used for Copper before.
