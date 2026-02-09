@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "addsynth_materials:gold_plate"
+    {
+      "id": "addsynth_materials:gold_plate",
+      "required": false
+    }
   ]
 }

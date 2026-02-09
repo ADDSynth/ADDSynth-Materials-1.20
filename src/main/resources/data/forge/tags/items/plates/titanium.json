@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "addsynth_materials:titanium_plate"
+    {
+      "id": "addsynth_materials:titanium_plate",
+      "required": false
+    }
   ]
 }

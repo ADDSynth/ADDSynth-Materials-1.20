@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "addsynth_materials:brass_plate"
+    {
+      "id": "addsynth_materials:brass_plate",
+      "required": false
+    }
   ]
 }

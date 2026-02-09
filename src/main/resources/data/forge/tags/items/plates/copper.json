@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "addsynth_materials:copper_plate"
+    {
+      "id": "addsynth_materials:copper_plate",
+      "required": false
+    }
   ]
 }

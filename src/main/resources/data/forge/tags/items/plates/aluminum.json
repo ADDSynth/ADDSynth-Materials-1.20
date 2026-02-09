@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "addsynth_materials:aluminum_plate"
+    {
+      "id": "addsynth_materials:aluminum_plate",
+      "required": false
+    }
   ]
 }
