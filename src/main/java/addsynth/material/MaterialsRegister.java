@@ -2,8 +2,7 @@ package addsynth.material;
 
 import java.util.List;
 import addsynth.material.compat.MaterialsCompat;
-import addsynth.material.compat.recipe.BronzeModAbsentCondition;
-import addsynth.material.compat.recipe.SteelModAbsentCondition;
+import addsynth.material.compat.recipe.RecipeConditions;
 import addsynth.material.reference.Material;
 import addsynth.material.reference.Names;
 import addsynth.material.types.Gem;
@@ -16,7 +15,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -181,8 +179,7 @@ public final class MaterialsRegister {
       CreativeTab.register(registry);
     }
     if(key.equals(ForgeRegistries.Keys.RECIPE_SERIALIZERS)){
-      CraftingHelper.register(SteelModAbsentCondition.Serializer.INSTANCE);
-      CraftingHelper.register(BronzeModAbsentCondition.Serializer.INSTANCE);
+      RecipeConditions.register();
     }
   }
 

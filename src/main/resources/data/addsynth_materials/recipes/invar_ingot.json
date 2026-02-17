@@ -11,5 +11,8 @@
     "count": 3
   },
   "conditions": [
+    {
+      "type": "addsynth_materials:invar_mod_absent"
+    }
   ]
 }

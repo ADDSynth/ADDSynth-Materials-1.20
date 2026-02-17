@@ -11,5 +11,8 @@
     "count": 3
   },
   "conditions": [
+    {
+      "type": "addsynth_materials:brass_mod_absent"
+    }
   ]
 }

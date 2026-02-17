@@ -5,6 +5,9 @@ NEW:
     Cobalt is uncommon (like Silver and Gold).
     Neodymium is rare (like Platinum or Titanium).
     Brass and Invar are Metal Alloys.
+      Since our alloy recipes are simple crafting recipes right now:
+      - The Brass recipe is disabled if Create or GregTech is installed.
+      - Invar recipe is disabled if GregTech or Thermal Foundation is installed.
   Material info and descriptions are now printed in Ingot tooltips.
    - This can be configured in the addsynth_materials.toml config file.
   Metal Blocks and Gem Blocks can now be used as Beacon Base blocks.
@@ -13,6 +16,11 @@ CHANGED:
   In the real world, Bronze actually has a lighter color than Copper. Changed the color of Bronze
     blocks and items to a lighter color that I've used for Copper before.
   Silicon Ore now drops 2-3 Silicon instead of just 1.
+  Updated which mods disables our alloy recipes:
+    Steel furnace recipe is disabled if:
+      Immersive Engineering, Mekanism, GregTech, or Tinkers' Construct is installed.
+    Bronze recipe is disabled if:
+      GregTech, Mekanism, or Thermal Foundation is installed.
 FIXED:
   Added missing Deepslate variants of all ores.
 
